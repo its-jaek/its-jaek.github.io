@@ -7,9 +7,14 @@
             margin: 0;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            background-image: url(https://i.imgur.com/hcju3LD.png);
+            background-image: url(./img/1.jpg);
             background-size: contain;
             background-position: center;
         }
     </head>
+
+    <script type="text/javascript">
+        var images = ['./img/1.jpg', './img/2.jpg'];
+        document.body.style.backgroundImage = 'url(' + images[Math.floor(Math.random() * images.length)] + ')';
+    </script>
 </html>
